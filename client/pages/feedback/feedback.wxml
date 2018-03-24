@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="msg-box">
+<!--留言-->
+  <view class="send-box">
+    <input placeholder="请留言..." value="{{inputVal}}" bindinput="changeInputVal" placeholder-class="place-input" class="input" />
+    <button size="mini" type="primary" bindtap="addMsg">添加</button>
+  </view>
+  <text class="msg-info" wx:if="{{msgData.length==0}}">暂无留言...~^_^~</text>
+  <!--留言列表-->
+    <view Class="list-view">
+      <view class="item" wx:for="{{msgData}}" wx:key="{{index}}">
+          <text class="text1">{{item.msg}}</text>
+          <icon class="close-btn" data-index="{{index}}" type="cancel" bindtap="delMsg"></icon>
+      </view>
+    </view>
+</view>

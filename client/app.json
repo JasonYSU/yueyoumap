@@ -1,0 +1,57 @@
+{
+    "pages": [
+      "pages/home/index",
+      "pages/logs/logs",
+      "pages/birds/birds",
+      "pages/plants/plants",
+      "pages/histories/histories",
+      "pages/feedback/feedback"
+    ],
+  "window": {
+    "backgroundTextStyle": "white",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "悦游地图",
+    "navigationBarBackgroundColor": "#FFFFFF",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "resources/icon_normal.png",
+        "selectedIconPath": "resources/icon_pressed.png",
+        "text": "点赞"
+      },
+      {
+        "pagePath": "pages/birds/birds",
+        "iconPath": "resources/icon_normal.png",
+        "selectedIconPath": "resources/icon_pressed.png",
+        "text": "听鸟鸣"
+      },
+      {
+        "pagePath": "pages/plants/plants",
+        "iconPath": "resources/icon_normal.png",
+        "selectedIconPath": "resources/icon_pressed.png",
+        "text": "识植物"
+      },
+      {
+        "pagePath": "pages/histories/histories",
+        "iconPath": "resources/icon_normal.png",
+        "selectedIconPath": "resources/icon_pressed.png",
+        "text": "人文"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "iconPath": "resources/icon_normal.png",
+        "selectedIconPath": "resources/icon_pressed.png",
+        "text": "反馈"
+      }
+    ]
+  },
+  "debug": true
+}

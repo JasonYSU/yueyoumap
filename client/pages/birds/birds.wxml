@@ -1,0 +1,39 @@
+<!--birds.wxml-->
+<view>
+  <scroll-view style="height: 100%;" scroll-y="true" class="container film-list" bindscroll="scroll" bindscrolltolower="scrolltolower">
+    <block wx:for-items="{{birds}}" wx:for-item="birds" wx:key="ID">
+      <view class="film-item" >
+        <view class="film-image">
+          <image src="{{birds.picture}}" mode="scaleToFill"></image> 
+        </view>
+        <view class="film-info">
+          <view >
+            <text class="film-title">{{birds.name}} </text>
+          </view>
+          <view class="directors">
+            <text class="label">鸟鸣链接</text>
+            <block src="{{birds.sound}}">
+            </block>
+          </view >
+        <audio id="{{birds.ID}}" src="{{birds.sounds}}"> </audio> 
+        <button wx:if="{{flags}}" type="primary" bindtap="pause">暂停</button> 
+        <button type="primary" bindtap="play">播放</button>
+
+        </view> 
+      </view>
+    </block>
+    <view class="load-more-wrap">
+      <block wx:if="{{hasMore}}">
+        <view class="load-content">
+          <text class="weui-loading"/><text class="loading-text">玩命加载中</text>
+        </view>
+      </block>
+      <block wx:else>
+        <view class="load-content">
+          <text>没有更多内容了</text>
+        </view>
+      </block>
+    </view>
+  </scroll-view>
+</view>
+

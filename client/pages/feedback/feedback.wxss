@@ -1,0 +1,38 @@
+/* pages/water/water.wxss */
+/**index.wxss**/
+.msg-box{
+  margin:10px 5px;
+}
+.send-box{
+  display:flex;
+  text-align:center;
+}
+.msg-info{
+  display: block;
+  margin:10px 0;
+  color:#339999;
+}
+.input{
+  border:1px solid #999;
+  padding:5px;
+  text-align:left;
+}
+.place-input{
+  color:#ff6600;
+}
+.list-view{
+  margin:20px 0 0 0;
+}
+.item{
+  overflow:hidden;
+  border-bottom:1px dashed #999;
+  line-height: 30px;
+  height:30px;
+}
+.text1{
+  float:left;
+}
+.close-btn{
+  float:right;
+  margin:5px 5px 0 0
+}

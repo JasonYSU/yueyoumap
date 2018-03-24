@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class="container">
+    <view>
+          <map id="map" longitude="116.306633" latitude="40.017196" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 600px;"></map>
+    </view>
+
+</view>
+
+<!-- 
+
+
+<view >
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">任务</view>
+        <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">听鸟鸣</view>
+        <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">识植物</view>
+        <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">历史</view>
+        <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">水</view>
+    </scroll-view>
+    <swiper  current="{{currentTab}}" duration="300" bindchange="switchTab"
+     style="height:{{winHeight}}rpx">
+        <swiper-item wx:for="{{[0,1,2,3,4]}}">
+          <map id="map" longitude="116.306633" latitude="40.017196" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 570px;"></map>
+        </swiper-item>
+    </swiper>
+</view>
+<!--
+<view class="page">
+  <image style="width: 375px; height: 650px; background-color: #eeeeee;" src="/resources/Qinghe.png" mode="withFix"/>
+   <!--map
+        class="mapView"
+        style="width: 100%; height: 550px;"
+        latitude="{{latitude}}"
+        longitude="{{longitude}}"
+        markers="{{markers}}"
+        covers="{{covers}}"
+        >
+    </map>
+  
+</view>
+-->
+
+<!--
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>   
+  </view>
+
+  <view class="usermotto">
+    <view class="user-motto">  
+      <button bindtap="missionReceiveTap">任务领取</button>
+      <button bindtap="openMapTap">打开地图</button>
+      <button bindtap="mineConfTap">我的成就</button>
+    </view>
+  </view>
+</view>
+-->
