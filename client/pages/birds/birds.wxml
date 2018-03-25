@@ -16,8 +16,8 @@
             </block>
           </view >
         <audio id="{{birds.ID}}" src="{{birds.sounds}}"> </audio> 
-        <button wx:if="{{flags}}" type="primary" bindtap="pause">暂停</button> 
-        <button type="primary" bindtap="play">播放</button>
+        <button data-birdid="{{birds.ID}}" wx:if="{{birds.play}}" type="primary" bindtap="pause">暂停</button> 
+        <button data-birdid="{{birds.ID}}" type="primary" bindtap="play">播放</button>
 
         </view> 
       </view>
