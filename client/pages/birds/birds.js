@@ -85,7 +85,16 @@ Page({
   },
   onReady: function(){
       // 使用 wx.createAudioContext 获取 audio 上下文 context
-      this.audioCtx = wx.createAudioContext('1','2','3','4')
+      this.audioCtx = [
+        wx.createAudioContext('1'),
+        wx.createAudioContext('2'),
+        wx.createAudioContext('3'),
+        wx.createAudioContext('4'),
+        wx.createAudioContext('5'),
+        wx.createAudioContext('6'),
+        wx.createAudioContext('7'),
+        wx.createAudioContext('8'),        
+      ];
       //this.audioCtx.setSrc('http://p4oxvy8sc.bkt.clouddn.com/绿头鸭.m4a')
       //this.audioCtx.play()
     },
@@ -94,12 +103,13 @@ Page({
     for (var i = 0; i < this.data.birds.length; i++) {
       if (id == this.data.birds[i].ID) {
         this.data.birds[i].play = true;
+        break;
       }
     }
     this.setData({
       birds: this.data.birds
     })
-    this.audioCtx.play()
+    this.audioCtx[id-1].play()
     this.setData({
       flags: true,
       flagp: false
@@ -115,7 +125,7 @@ Page({
     this.setData({
       birds: this.data.birds
     })
-    this.audioCtx.pause()
+    this.audioCtx[id-1].pause()
     this.setData({
       flags: false,
       flagp: true
