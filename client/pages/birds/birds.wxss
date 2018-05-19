@@ -1,5 +1,4 @@
 /* pages/birds/birds.wxss */
-/* pages/mission/mission.wxss */
 /**app.wxss**/
 page{
   height: 100%;
@@ -22,52 +21,53 @@ page{
   justify-content: space-between;
   box-sizing: border-box;
   font-family: "Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;
-  font-size: 14px;
+  font-size: 14rpx;
   line-height: 1.5;
   color: #333;
 }
 .film-item{
-  padding: 10px;
+  padding: 10rpx;
   display: flex;
 }
 .film-image{
-  width: 270px;
+  width: 540rpx;
 }
 .film-image image{
-  width: 270px;
-  height: 200px;
+  width: 540rpx;
+  height: 360rpx;
 }
 .film-info{
-  padding-left: 10px;
+  padding-left: 10rpx;
   flex: 1;
 }
 .film-info view{
-  margin-bottom: 10px;
+  margin-bottom: 10rpx;
 }
 .film-info .label{
-  margin-right: 5px;
+  font-size: 30rpx;
+  margin-right: 10rpx;
   color: #666;
 }
 .film-info .rating{
   color: #e09015;
 }
 .film-title{
- font-size: 18px;
- margin-right: 10px;
+ font-size: 36rpx;
+ margin-right: 10rpx;
 }
 .film-year{
-  font-size: 16px;
+  font-size: 16rpx;
   color: #999;
 }
 .person{
-  margin-right: 5px;
+  margin-right: 5rpx;
 }
 .page-loading{
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  font-size: 14px;
+  font-size: 14rpx;
   color: #666;
 }
 .page-loading .loading-text{
@@ -75,8 +75,8 @@ page{
   vertical-align: middle;
 }
 .weui-loading {
-  width: 20px;
-  height: 20px;
+  width: 20rpx;
+  height: 20rpx;
   display: inline-block;
   vertical-align: middle;
   -webkit-animation: weuiLoading 1s steps(12, end) infinite;
@@ -86,16 +86,16 @@ page{
 }
 .load-more-wrap{
   text-align: center;
-  padding: 10px 20px 20px 20px;
+  padding: 10rpx 20rpx 20rpx 20rpx;
 }
 .load-content{
-  padding: 5px;
+  padding: 5rpx;
   color: #666;
 }
 .btn-load-more text{
   display: block;
-  padding: 5px;
-  border-radius: 3px;
+  padding: 5rpx;
+  border-radius: 3rpx;
   background: #e6e6e6;
   color: #666;
   text-align: center;
@@ -105,14 +105,14 @@ page{
     line-height: 1.2;
 }
 .film-detail .film-info view{
-  margin-bottom: 6px;
+  margin-bottom: 6rpx;
 }
 .summary{
-    padding: 0 10px;
+    padding: 0 10rpx;
 }
 .summary .title{
-    font-size: 16px;
-    margin: 15px 0;
+    font-size: 16rpx;
+    margin: 15rpx 0;
 }
 .summary .content{
     text-indent: 2em;
@@ -121,7 +121,7 @@ page{
     display: inline-block;
 }
 .collect-wish view:first-child{
-    margin-right: 5px;
+    margin-right: 5rpx;
 }
 .collect-wish text{
     color: #666;
@@ -251,8 +251,8 @@ page{
   margin: 25rpx;
 }
 .page-body-button image {
-  width: 150rpx;
-  height: 150rpx;
+  width: 100rpx;
+  height: 100rpx;
 }
 .page-footer {
   text-align: center;
