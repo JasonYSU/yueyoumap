@@ -3,7 +3,8 @@
  */
 
 // 此处主机域名修改成腾讯云解决方案分配的域名
-var host = 'https://j1vgnosw.qcloud.la';
+var host = 'https://wx.yueyoumap.com';
+//'https://j1vgnosw.qcloud.la';
 //'https://485889659.yueyoumap.com'; 
 
 var config = {

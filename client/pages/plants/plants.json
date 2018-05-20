@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "植物识别(百度)"
+  "navigationBarTitleText": "植物识别(百度)",
+    "usingComponents": {
+      "zan-icon": "dist/icon/index"
+    }
 }
