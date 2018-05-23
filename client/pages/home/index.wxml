@@ -1,14 +1,24 @@
 <!--index.wxml-->
-<view class="container">
+<!--
+<view>
+<block wx:for-items="{{markers}}" wx:for-item="birds" wx:key="id">
+  <view class="container">
     <view>
           <map id="map" longitude="116.306633" latitude="40.017196" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 600px;"></map>
     </view>
-
+</block>
 </view>
+-->
+
+  <view>
+    <map id="map"  scale="{{scale}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" 
+latitude="{{latitude}}"
+longitude ="{{longitude}}"
+controls="{{controls}}" show-location bindregionchange="regionchange" style="width: 100%; height: 600px;"></map>
+  </view>
 
 <!-- 
-
-
+{{view.Height}}
 <view >
     <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
         <view class="tab-item {{currentTab==0?'active':''}}"  data-current="0" bindtap="swichNav">任务</view>

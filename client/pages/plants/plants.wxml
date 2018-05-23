@@ -4,7 +4,7 @@
   <view bindtap="uploads">
     <button class="up">拍照识植物</button> 
   </view>
-  <zan-icon type="location"></zan-icon>
+  <!--<zan-icon type="location"></zan-icon>-->
   <button type="warn" bindtap="changeinfo">{{info}}</button>
   <text class="user-names">{{names}}</text>
   <text class="user-probabilitys">{{scores}}</text>
