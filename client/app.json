@@ -2,13 +2,20 @@
     "pages": [
       "pages/home/index",
       "pages/logs/logs",
-      "pages/birds/birds",
-      "pages/plants/plants",
-      "pages/histories/histories",
+      "pages/tools/tools",
+      "pages/tools-birds/birds",
+      "pages/tools-plants/plants",
+      "pages/tools-latitude/latitude",
+      "pages/tools-history/history",
+      "pages/activities/activities",
+      "pages/activities-calendar/calendar",
+      "pages/naturename/naturename",
+      "pages/naturename-list/list",
+      "pages/naturename-recommend/recommend",
       "pages/feedback/feedback"
     ],
   "window": {
-    "backgroundTextStyle": "white",
+    "backgroundTextStyle": "light",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "悦游地图",
     "navigationBarBackgroundColor": "#FFFFFF",
@@ -25,25 +32,25 @@
         "pagePath": "pages/home/index",
         "iconPath": "resources/icon_normal.png",
         "selectedIconPath": "resources/icon_pressed.png",
-        "text": "点赞"
+        "text": "地图"
       },
       {
-        "pagePath": "pages/birds/birds",
+        "pagePath": "pages/tools/tools",
         "iconPath": "resources/icon_normal.png",
         "selectedIconPath": "resources/icon_pressed.png",
-        "text": "听鸟鸣"
+        "text": "工具"
       },
       {
-        "pagePath": "pages/plants/plants",
+        "pagePath": "pages/activities/activities",
         "iconPath": "resources/icon_normal.png",
         "selectedIconPath": "resources/icon_pressed.png",
-        "text": "识植物"
+        "text": "活动"
       },
       {
-        "pagePath": "pages/histories/histories",
+        "pagePath": "pages/naturename/naturename",
         "iconPath": "resources/icon_normal.png",
         "selectedIconPath": "resources/icon_pressed.png",
-        "text": "人文"
+        "text": "自然名"
       },
       {
         "pagePath": "pages/feedback/feedback",
