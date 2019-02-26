@@ -1,4 +1,4 @@
-var qcloud = require('../../vendor/wafer2-client-sdk/index')
+//var qcloud = require('../../vendor/wafer2-client-sdk/index')
 var config = require('../../config')
 var util = require('../../utils/util.js')
 var app = getApp();
@@ -47,7 +47,7 @@ Page({
     console.info(name);
     var that = this;
     var imgdata = that.data.img;
-    if (words == "success") {
+    if (words == "识别成功") {
       this.setData({
         names: "植物名称：" + " " + name,
         scores: "可信度：" + " " + score
@@ -90,7 +90,8 @@ Page({
           img: res.tempFilePaths[0]
         })
         wx.uploadFile({
-          url: config.service.uploadUrl,//'https://www.xsshome.cn/xcx/image/uploadBDPLANT',
+          url: 'https://wx.yueyoumap.com/RecognizePlants',
+          //config.service.uploadUrl,//
           //url: config.service.uploadUrl,
           filePath: res.tempFilePaths[0],
           header: {
@@ -104,9 +105,9 @@ Page({
             var data = res.data;
             var str = JSON.parse(data);
             console.log(str);
-          /*  name = str.name;
-            score = str.score;
-            words = str.words;*/
+            name = str.result[0].name;
+            score = str.result[0].score;
+            words = str.message;
           },
           fail: function (res) {
             console.log(res)
