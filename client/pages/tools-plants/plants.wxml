@@ -1,12 +1,17 @@
-<view class="container">
-
-  <image style="width: 100%; height: 300px; background-color: #eeeeee;" src="{{img}}"></image>
-  <view bindtap="uploads">
-    <button class="up">拍照识植物</button> 
+<view class="page">
+  <view wx:if="{{count > 0}}" class="weui-flex__item image_box">
+    <image class="image" src="{{image}}" mode="aspectFill" />
   </view>
-  <!--<zan-icon type="location"></zan-icon>-->
-  <button type="warn" bindtap="changeinfo">{{info}}</button>
-  <text class="user-names">{{names}}</text>
-  <text class="user-probabilitys">{{scores}}</text>
+  <view wx:else class='weui-flex'>
+    <view class="weui-flex__item image_box">
+      <view class="weui-uploader__input-box image" bindtap="chooseImage">
+      </view>
+    </view>
+  </view>
+  <view class="weui-flex">
+    <view class="button-sp-area">
+      <button class="weui-btn mini-btn" type="primary" plain="true" bindtap="uploads">确认</button>
+      <button wx:if="{{count > 0}}" class="weui-btn mini-btn" type="default" plain="true" bindtap="chooseImage">重新选择</button>
+    </view>
+  </view>
 </view>
-

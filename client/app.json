@@ -1,19 +1,20 @@
 {
-    "pages": [
-      "pages/home/index",
-      "pages/logs/logs",
-      "pages/tools/tools",
-      "pages/tools-birds/birds",
-      "pages/tools-plants/plants",
-      "pages/tools-latitude/latitude",
-      "pages/tools-history/history",
-      "pages/activities/activities",
-      "pages/activities-calendar/calendar",
-      "pages/naturename/naturename",
-      "pages/naturename-list/list",
-      "pages/naturename-recommend/recommend",
-      "pages/feedback/feedback"
-    ],
+  "pages": [
+    "pages/home/index",
+    "pages/logs/logs",
+    "pages/tools/tools",
+    "pages/tools-birds/birds",
+    "pages/tools-plants/plants",
+    "pages/tools-latitude/latitude",
+    "pages/tools-history/history",
+    "pages/activities/activities",
+    "pages/activities-calendar/calendar",
+    "pages/naturename/naturename",
+    "pages/naturename-list/list",
+    "pages/naturename-recommend/recommend",
+    "pages/feedback/feedback",
+    "pages/naturename-change/naturename-change"
+  ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarTextStyle": "black",
