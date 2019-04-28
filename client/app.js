@@ -1,4 +1,6 @@
 //app.js
+const prodHost = 'https://wx.yueyoumap.com';
+const devHost = 'http://127.0.0.1:8000';
 App({
   onLaunch: function () {
     console.log('App Launch')
@@ -7,6 +9,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
   },
+  /*
   getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
@@ -24,7 +27,7 @@ App({
         }
       })
     }
-  },
+  },*/
   onShow: function () {
     console.log('App Show')
   },
@@ -32,6 +35,7 @@ App({
     console.log('App Hide')
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    host: devHost,
   }
 })
