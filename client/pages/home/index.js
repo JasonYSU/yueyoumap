@@ -3,109 +3,119 @@ Page({
    * 页面的初始数据
    */
   data: {
-    latitude: 40.0251292215,
-    longitude: 116.3504880667,
-    markers: [
-      {
-        id: 0,
-        iconPath: "../../resources/广济桥.png",
-        latitude: 40.0251292215,
-        longitude: 116.3504880667,
-        callout: {
-          content: " 清河广济桥",
-          padding: 5,
-          color: "#ff0000",
-          bgColor: "#ffff00",
-          display: 'ALWAYS',
-          textAlign: 'center',
-          borderRadius: 10,
-          borderColor: '#ffffff',
-          borderWidth: 2,
-        }
-
-      },
-      {
-        id: 1,
-        latitude: 40.0269161215,
-        longitude: 116.3465076685,
-        callout: {
-          content: "清河清真寺",
-          padding: 5,
-          color: "#ff0000",
-          bgColor: "#ffff00",
-          display: 'ALWAYS',
-          textAlign: 'center',
-          borderRadius: 10,
-          borderColor: '#ffffff',
-          borderWidth: 2,
-        }
-
-      },
-      {
-        id: 2,
-        latitude: 40.0283538231,
-        longitude: 116.3341212273,
-        callout: {
-          content: "清河制呢厂办公楼",
-          padding: 5,
-          color: "#ff0000",
-          bgColor: "#ffff00",
-          display: 'ALWAYS',
-          textAlign: 'center',
-          borderRadius: 10,
-          borderColor: '#ffffff',
-          borderWidth: 2,
-        }
-
-      },
-      {
-        id: 3,
-        latitude: 40.0277171304,
-        longitude: 116.3236445189,
-        callout: {
-          content: "清河古汉城遗址",
-          padding: 5,
-          color: "#ff0000",
-          bgColor: "#ffff00",
-          display: 'ALWAYS',
-          textAlign: 'center',
-          borderRadius: 10,
-          borderColor: '#ffffff',
-          borderWidth: 2,
-        }
-
-      },
-    ],
-    mapWidth: '',
-    mapHeight: ''
-
+    showMarkIcon: true, // 显示POI图标
+    //showRoute: true, // 显示路径标记图标
+    latitude: '',
+    longitude: '',
+    markers: [],
+    mapStyle: '',
+    polyline: [],
   },
-  toaddress: function (e) {
-    console.log(e)
-    var id = e.markerId
-    console.log(id)
-    // wx.openLocation({
-    //   latitude: this.data.markers[id].latitude,
-    //   longitude: this.data.markers[id].longitude,
-    // })
-    wx.navigateTo({
-      url: '/pages/index/index',
-      success: function (res) { },
-      fail: function (res) { },
-      complete: function (res) { },
+
+   /**
+   * 获取当前位置
+   */
+  onReady: function (e) {
+    this.mapCtx = wx.createMapContext('myMap');
+    // 地图铺满屏幕
+    this.getMapStyle();
+    // 获取当前所在位置
+    this.getLocation();
+  },
+
+  /**
+   * 获取真机的窗口宽高,为地图样式赋初值
+   */
+  getMapStyle() {
+    wx.getSystemInfo({
+      success: (res) => {
+        this.setData({
+          mapStyle: `width:${res.windowWidth}px;height:${res.windowHeight}px;`
+        })
+      },
+    });
+  },
+
+  /**
+   * 获取当前位置
+   */
+  getLocation() {
+    wx.getLocation({
+      type: 'gcj02',
+      success: (res) => {
+        console.log(res);
+        this.setData({
+          latitude: res.latitude,
+          longitude: res.longitude
+        });
+      },
+      fail: res => {
+        console.log(res);
+      }
     })
   },
 
   /**
-   * 生命周期函数--监听页面加载
+   * 连线
    */
-  onLoad: function (options) {
-    var sy = wx.getSystemInfoSync(),
-      mapWidth = sy.windowWidth * 2,
-      mapHeight = sy.windowHeight * 2;
+  connectPoly: function (res) {
+    let chooseMarkers = [].concat(this.data.markers);
+    //连线
+    let points = [];//points 取表单中信息
+    let polyline = [].concat(this.data.polyline);//length值？？
+    if (this.data.markers.length === 0) {
+      points = [];
+    } else {
+      points = [{
+        latitude: chooseMarkers[chooseMarkers.length - 1].latitude,
+        longitude: chooseMarkers[chooseMarkers.length - 1].longitude,
+      }, {
+        latitude: res.latitude,
+        longitude: res.longitude,
+      }];
+    }
+
+    polyline.push({
+      points: points,
+      color: '#FF0000DD',
+      width: 2,
+      dottedLine: false
+    });
     this.setData({
-      mapWidth: mapWidth,
-      mapHeight: mapHeight
+      polyline: polyline
+    });
+  },
+
+  /**
+   * 标记点
+   */
+  markLocation: function () {
+
+    this.mapCtx.getCenterLocation({
+      success: (res) => {
+        if (this.data.showIpnutModal) {
+          return;
+        }
+        let chooseMarkers = [].concat(this.data.markers);
+
+        chooseMarkers.push({
+          id: chooseMarkers.length + 1,
+          latitude: res.latitude,
+          longitude: res.longitude,
+          iconPath: '../../resources/location-green.png'
+        });
+
+        //循环连线
+        //标记下一个点前先划线
+        this.connectPoly(res);
+
+        this.setData({
+          markers: chooseMarkers,
+          showIpnutModal: true,
+          inputInfo: '',
+          showMarkIcon: false
+        });
+      }
     })
-  }
+  },
 })

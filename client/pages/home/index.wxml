@@ -1,1 +1,25 @@
+<view class="page-body">
+    <view class="page-section">
+        <map id="myMap" class='map' style='{{mapStyle}}' latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" covers="{{covers}}" :enable-3D='true' polyline='{{polyline}}' show-location>
+            <!-- 中心标记点 -->
+            <cover-view class='center' wx:if='{{showMarkIcon}}'>
+                <cover-image class='center-image' src='../../resources/location-red.png' bindtap='markLocation'></cover-image>
+            </cover-view>
+            <!-- 中心标记点 -->
+
+            <!-- 到达地点确认框 -->
+            <cover-view class='arrive-modal' wx:if="{{showArrivedModal}}">
+                <cover-view class="arrive-info">
+                    是否到达当前地点
+                </cover-view>
+                <cover-view class='position-center' bindtap='arrivedLocation'>我已到达</cover-view>
+            </cover-view>
+            <!-- 到达地点确认框 -->
+
+        </map>
+    </view>
+
+</view>
+<!---
 <map id="myMap" style="width: {{mapWidth}}rpx; height: {{mapHeight}}rpx;" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" show-location bindmarkertap="selectMarket" include-points="{{markers}}" bindmarkertap="toaddress"></map>
+-->
