@@ -82,10 +82,8 @@ WSGI_APPLICATION = 'server.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': config.get('MYSQL', 'name'),
-        'USER': config.get('MYSQL', 'user'),
-        'PASSWORD': config.get('MYSQL', 'password'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
         'OPTIONS': {
 
         }
