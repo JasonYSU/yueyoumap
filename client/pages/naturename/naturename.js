@@ -15,7 +15,7 @@ Page({
       console.log('got token')
       this.getAppUserInfo(token)
     } else {
-      
+      this.login()
     }
     // 显示所有用户
     wx.request({

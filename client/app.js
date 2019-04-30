@@ -36,6 +36,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    host: devHost,
+    host: prodHost,
   }
 })
