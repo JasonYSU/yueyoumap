@@ -1,10 +1,11 @@
+const Utils = require('../../resources/gis-poi.js');
 Page({
   /**
    * 页面的初始数据
    */
   data: {
     showMarkIcon: true, // 显示POI图标
-    //showRoute: true, // 显示路径标记图标
+    showRoute: true, // 显示路径标记图标
     latitude: '',
     longitude: '',
     markers: [],

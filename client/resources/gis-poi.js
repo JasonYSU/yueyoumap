@@ -13,21 +13,21 @@ module.exports = [
     "placeName": "清河清真寺",
     "placeImageUrl": "http://p52ap67fa.bkt.clouddn.com/清河清真寺.jpg",
     "placeAddress": "北京市海淀区",
-    "placeLongitude": "116.3465076685",
-    "placeLatitude": "40.0269161215"
+    "longitude": "116.3465076685",
+    "latitude": "40.0269161215"
   }, {
     "id": 2,
     "placeName": "清河制呢厂办公楼",
     "placeImageUrl": "http://p52ap67fa.bkt.clouddn.com/制呢厂办公楼.jpg",
     "placeAddress": "北京市海淀区",
-    "placeLongitude": "116.3341212273",
-    "placeLatitude": "40.0283538231"
+    "longitude": "116.3341212273",
+    "latitude": "40.0283538231"
   }, {
     "id": 3,
     "placeName": "清河古汉城遗址",
     "placeImageUrl": "http://p52ap67fa.bkt.clouddn.com/清河汉城遗址.jpg",
     "placeAddress": "北京市海淀区",
-    "placeLongitude": "116.3236445189",
-    "placeLatitude": "40.0277171304"
+    "longitude": "116.3236445189",
+    "latitude": "40.0277171304"
   }
 ]

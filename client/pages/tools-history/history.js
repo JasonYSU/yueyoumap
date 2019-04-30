@@ -8,23 +8,23 @@ Page({
       {
         ID: 1,
         name: "清河广济桥（老桥）",
-        picture: 'http://p52ap67fa.bkt.clouddn.com/广济桥.jpg'
+        picture: 'http://pqrsdufs6.bkt.clouddn.com/广济桥1.jpg'
         //wx:for-items = {{birds.sound}}     
       },
       {
         ID: 2,
         name: "清河清真寺（老寺）",
-        picture: 'http://p52ap67fa.bkt.clouddn.com/清河清真寺.jpg'
+        picture: 'http://pqrsdufs6.bkt.clouddn.com/清河清真寺.jpg'
       },
       {
         ID: 3,
         name: "清河制呢厂办公楼（老厂）",
-        picture: 'http://p52ap67fa.bkt.clouddn.com/制呢厂办公楼.jpg'
+        picture: 'http://pqrsdufs6.bkt.clouddn.com/制呢厂办公楼.jpg'
       },
       {
         ID: 4,
         name: "清河古城遗址（老城）",
-        picture: 'http://p52ap67fa.bkt.clouddn.com/清河汉城遗址.jpg'
+        picture: 'http://pqrsdufs6.bkt.clouddn.com/清河汉城遗址.jpg'
         //wx:for-items = {{birds.sound}}
       },
       {

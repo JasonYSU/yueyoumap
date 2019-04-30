@@ -8,70 +8,69 @@ Page({
       {
         ID: 1,
         name: "绿头鸭",
-        picture: 'http://picbqqd5h.bkt.clouddn.com/绿头鸭.jpg',//'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birdslvtouya.jpg',
-        //{{birds.picture}}  data-id="{{birds.id}}" <view class="film-image"></view>
+        picture: 'http://pqrrsikro.bkt.clouddn.com/绿头鸭.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24858.html&open=new',
         //wx:for-items = {{birds.sound}}
-        sounds:'http://p4oxvy8sc.bkt.clouddn.com/绿头鸭.mp3',
+        sounds:'http://pqrsyw5v1.bkt.clouddn.com/绿头鸭.mp3',
         play: false
 
       },
       {
         ID: 2,
         name: "灰喜鹊",
-        picture:'http://picbqqd5h.bkt.clouddn.com/灰喜鹊.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds灰喜鹊.jpg',
+        picture:'http://pqrrsikro.bkt.clouddn.com/灰喜鹊.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds灰喜鹊.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/灰喜鹊.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/灰喜鹊.mp3',
         play: false
       },
       {
         ID:3,
         name: "珠颈斑鸠",
-        picture: 'http://picbqqd5h.bkt.clouddn.com/珠颈斑鸠.jpg',//http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds珠颈斑鸠.jpg',
+        picture: 'http://pqrrsikro.bkt.clouddn.com/珠颈斑鸠.jpg',//http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds珠颈斑鸠.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/珠颈斑鸠.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/珠颈斑鸠.mp3',
         play: false
       },
       {
         ID: 4,
         name: "小䴙䴘",
-        picture:'http://picbqqd5h.bkt.clouddn.com/小PT2.jpg', //'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds小PT2.jpg',
+        picture:'http://pqrrsikro.bkt.clouddn.com/小PT2.jpg', //'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds小PT2.jpg',
         //{{birds.picture}}  data-id="{{birds.id}}" 
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24858.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/小䴙䴘.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/小䴙䴘.mp3',
         play: false
         //wx:for-items = {{birds.sound}}
       },
       {
         ID: 5,
         name: "四声杜鹃",
-        picture:'http://picbqqd5h.bkt.clouddn.com/四声杜鹃.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds四声杜鹃.jpg',
+        picture:'http://pqrrsikro.bkt.clouddn.com/四声杜鹃.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds四声杜鹃.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/四声杜鹃.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/四声杜鹃.mp3',
         play: false
       },
       {
         ID: 6,
         name: "家燕",
-        picture:'http://picbqqd5h.bkt.clouddn.com/家燕.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds家燕.jpg',
+        picture:'http://pqrrsikro.bkt.clouddn.com/家燕.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds家燕.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/家燕.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/家燕.mp3',
         play: false
       },
       {
         ID: 7,
         name: "灰椋鸟",
-        picture: 'http://picbqqd5h.bkt.clouddn.com/灰椋鸟.jpg',//http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds灰椋鸟.jpg',
+        picture: 'http://pqrrsikro.bkt.clouddn.com/灰椋鸟.jpg',//http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds灰椋鸟.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/灰椋鸟.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/灰椋鸟.mp3',
         play: false
       },
       {
         ID: 8,
         name: "白鹭",
-        picture:'http://picbqqd5h.bkt.clouddn.com/白鹭2.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds白鹭2.jpg',
+        picture:'http://pqrrsikro.bkt.clouddn.com/白鹭2.jpg',// 'http://p0ob3mc5y.bkt.clouddn.com/yueyoumap/birds白鹭2.jpg',
         sound: 'http://c.deyuedu.net/cloud/index.php?manditu/playsy-id_24855.html&open=new',
-        sounds: 'http://p4oxvy8sc.bkt.clouddn.com/白鹭.mp3',
+        sounds: 'http://pqrsyw5v1.bkt.clouddn.com/白鹭.mp3',
         play: false
       }
     ]
