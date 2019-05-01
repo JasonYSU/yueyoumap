@@ -4,8 +4,12 @@
 	"miniprogramRoot": "client/",
 	"qcloudRoot": "server/",
 	"setting": {
-		"urlCheck": true,
-		"newFeature": true
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
 	},
 	"appid": "wxaa945103696951fe",
 	"projectname": "%E6%82%A6%E6%B8%B8%E5%9C%B0%E5%9B%BE",

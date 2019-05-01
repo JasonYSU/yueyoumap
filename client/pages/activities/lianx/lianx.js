@@ -1,0 +1,19 @@
+
+Page({
+  data: {
+    loadingHide: true,
+    loadingText: "加载中"
+  },
+  callmeTap: function () {
+    wx.makePhoneCall({
+      phoneNumber: '010-0000000'
+    })
+  },
+  onLoad: function (options) {
+    var that = this;
+    that.setData({ loadingHide: false });
+    setTimeout(function () {
+      that.setData({ loadingHide: true });
+    }, 1000)
+  }
+})

@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+<include src="listData.wxml" />
+
+<view hidden="{{hidden}}" class="loading">
+  <view class="loadingImg"><image src="/../resources/loading.gif" mode="aspectFill"></image></view>
+  <view class="loadingTxt">..加载中..</view>
+</view>
+
+<view class="displayNo" hidden="{{display}}">
+  <image src="/../resources/Noline.png" mode="widthFix"></image>
+</view>
+
+</view>

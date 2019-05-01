@@ -1,0 +1,67 @@
+<!--pages/add/add.wxml-->
+
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+
+<view class="addMain">
+
+  <view class="mbTxing">
+    <text>【提醒】违法广告信息将会被管理员永久禁言</text>
+  </view>
+  <form bindsubmit="formSubmit">
+    <input type="text" name="longitude" value="{{longitude}}" hidden="true"></input>
+    <input type="text" name="latitude" value="{{latitude}}" hidden="true"></input>
+    <input type="text" name="address" value="{{address}}" hidden="true"></input>
+
+    <view class='title'>
+      <label>活动名称</label><input maxlength="20" name="title" placeholder='请先填写名称'></input>
+    </view>
+
+    <view class='title'>
+      <label>活动地点</label><input maxlength="20" name="addres" placeholder='填写活动地址'></input>
+    </view>
+
+    <view class='ktime'>
+      <label>开始时间</label>
+      <view class='picker'>
+        <picker mode="date" value="{{kdate}}" start="2017-09-01" end="2020-09-01" bindchange="kbindDateChange">
+          {{kdate}}
+        </picker>
+      </view>
+    </view>
+
+
+    <view class='ktime'>
+      <label>结束时间</label>
+      <view class='picker'>
+        <picker mode="date" value="{{jdate}}" start="2017-09-01" end="2020-09-01" bindchange="jbindDateChange">
+          {{jdate}}
+        </picker>
+      </view>
+    </view>
+
+    <view bindtap="checkimg" class='checkimg'>
+    <image wx:for="{{imglist}}" class="uploadPics" mode="aspectFill" src="{{item}}" wx:key=""></image>
+    <image src="../../../resources/upic.png" class="uploadPic" mode="widthFix"></image>
+    </view>
+
+    <view class="mbInput">
+      <!--物品描述+图片上传-->
+      <view class="miaoshu">
+        <textarea placeholder="活动信息描述" auto-height class="section" maxlength="150" name="content" value='{{content}}' />
+      </view>
+    </view>
+
+    <!-- 获取发布位置 -->
+    <view class='getGps' bindtap="clearGps">
+        <image src="../../../resources/map.png" class="mapIco" mode="widthFix"></image>
+        <label>发布位置</label><text>{{address}}</text>
+    </view>
+
+    <view class="mbBtn">
+      <button class="vBtn_ok" formType="submit" loading="{{loading}}" disabled="{{disabled}}">发布活动</button>
+    </view>
+  </form>
+
+</view>

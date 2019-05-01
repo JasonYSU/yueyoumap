@@ -1,0 +1,25 @@
+<!--pages/about/about.wxml-->
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+<view class="IndexList">
+  <view bindtap="callmeTap">
+    <image src="../../../resources/tel.png" class="telIco" mode="widthFix"></image>
+    <text class="tel">电话 / 010-0000000</text>
+  </view>
+  <view>
+    <image src="../../../resources/weixin.png" class="weixinIco" mode="widthFix"></image>
+    <text class="map">微信 / JasonYSU</text>
+  </view>
+  <view>
+    <image src="../../../resources/email.png" class="eIco" mode="widthFix"></image>
+    <text class="email">邮件 / chenlong1212@outlook.com</text>
+  </view>
+  <view>
+    <image src="../../../resources/map.png" class="mapIco" mode="widthFix"></image>
+    <text class="map">北京市海淀区</text>
+  </view>
+</view>
+<view class="footer">
+  @2019 悦游地图 版权所有
+</view>

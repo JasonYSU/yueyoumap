@@ -1,0 +1,9 @@
+<!--pages/ulist/ulist.wxml-->
+<view class="container">
+
+<!--index.wxml-->  
+<include src="list-a.wxml" />
+
+
+
+</view>

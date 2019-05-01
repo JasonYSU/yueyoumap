@@ -1,0 +1,68 @@
+<!--pages/view/view.wxml-->
+<view class="containes">
+
+
+<view class="titles">
+  <text>{{views.title}}</text>
+</view>
+
+<view class="viewMain">
+	<view class="content">
+      <view class='kdate'>
+        <label>开始时间：</label>
+        <text>{{views.kdate}}</text>
+      </view>
+      <view class='kdate'>
+        <label>结束时间：</label>
+        <text>{{views.jdate}}</text>
+      </view>
+            <view class='kdate'>
+        <label>联系咨询：</label>
+        <text bindtap='callmeTap'>{{views.tel}} (已认证)</text>
+      </view>
+      <view class='kdate'>
+        <label>活动地点：</label>
+        <text>{{views.addres}}</text>
+      </view>
+
+      <view class="content-a">
+        {{views.content}}
+      </view>
+      <view class="content-b" wx:if="{{views.photo != null}}">
+          <image class="poster" src="{{picUrl}}{{views.photo}}" data-src="{{picUrl}}{{views.photo}}" mode="widthFix" style="width: {{windowWidth}}px;"></image>
+      </view>
+	</view>
+
+</view>
+
+
+<view class="UserName">
+  <view class="UserPic">
+    <image src="{{views.headimgurl}}"></image>
+    <text>{{views.wxname}}</text>
+  </view>
+  <view class="UserDate">
+    <text>{{views.datetime}}</text>
+  </view>
+</view>
+
+<!-- 获取发布位置 -->
+<view class='getGps'>  
+    <text bindtap='openMaps' data-long="{{views.long}}" data-lat="{{views.lat}}" data-address="{{views.address}}">发布于：{{views.address}}</text>
+    <image src="../../../resources/map.png" class="mapIco" mode="widthFix"></image>
+</view>
+
+<view class='zhuan'>
+  <button bindtap='bMingBtn'>我要报名</button>
+</view>
+
+<view class='bmList'>
+  <label>报名列表 ( 显示最近报名10人 )</label>
+  <block url="" wx:for="{{gzList}}" wx:key="" class="gzList" wx:for-item="g">
+    <view class='userLs'>
+      <text class='userName'>[ {{g.datetime}} ] {{g.xingming}}</text><text class='userTel'>{{g.tels}}</text>
+    </view>
+  </block>
+</view>
+
+</view>

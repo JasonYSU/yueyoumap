@@ -7,13 +7,21 @@
     "pages/tools-plants/plants",
     "pages/tools-latitude/latitude",
     "pages/tools-history/history",
-    "pages/activities/activities",
     "pages/activities-calendar/calendar",
     "pages/naturename/naturename",
     "pages/naturename-list/list",
     "pages/naturename-recommend/recommend",
     "pages/feedback/feedback",
-    "pages/naturename-change/naturename-change"
+    "pages/naturename-change/naturename-change",
+    "pages/activities/about/about",
+    "pages/activities/add/add",
+    "pages/activities/baoming/baoming",
+    "pages/activities/index/index",
+    "pages/activities/lianx/lianx",
+    "pages/activities/mobile/mobile",
+    "pages/activities/ulist/ulist",
+    "pages/activities/user/user",
+    "pages/activities/view/view"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -42,7 +50,7 @@
         "text": "工具"
       },
       {
-        "pagePath": "pages/activities/activities",
+        "pagePath": "pages/activities/index/index",
         "iconPath": "resources/icon_normal.png",
         "selectedIconPath": "resources/icon_pressed.png",
         "text": "活动"
@@ -64,7 +72,7 @@
   
     "permission": {
       "scope.userLocation": {
-        "desc": "你的位置信息将用于小游戏位置接口的效果展示"
+        "desc": "你的位置信息将用提供位置服务"
       }
     },
     

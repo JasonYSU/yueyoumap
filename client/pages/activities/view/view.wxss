@@ -1,0 +1,102 @@
+/* pages/view/view.wxss */
+
+.containes {
+  padding-bottom: 45px;
+}
+
+.titles{
+   width: 92%;  padding:3% 4%; background: #FFFBF7;
+   color: #666; font-size: 11pt; text-align: center; border-bottom: 2rpx dashed #FFE0C4;
+}
+.titles text{ width: 100%; display: block }
+
+.viewMain{
+  width: 92%;
+  margin: 0 auto
+}
+
+.UserName{
+  display:flex;
+  border-top: 2rpx #F4F4F4 solid; padding: 15rpx 5%;
+  width: 90%; border-bottom: 2rpx #F4F4F4 solid;
+}
+.UserName .UserPic{
+  flex: 4;
+  height: 60rpx;overflow: hidden
+}
+.UserName .UserPic image{width: 52rpx; height: 52rpx; border: 2rpx #e3e3e3 solid; padding: 2rpx; background:#fff}
+
+.UserName .UserPic text{
+  width: 300rpx; 
+  height: 60rpx; 
+  line-height: 60rpx; 
+  margin-left: 10rpx; 
+  position:  absolute;
+  overflow: hidden;
+  color: #666;
+  font-size: 10pt
+}
+
+.UserName .UserDate{
+  flex: 2;
+  text-align: right; height: 60rpx; line-height: 60rpx; color: #999; font-size: 10pt
+}
+
+.content{
+   margin: 0 auto; width: 100%;
+}
+
+.content-a{ width: 100%; margin-bottom: 20rpx;  font-size: 16px; padding-top: 10px}
+.content-a label{ width: 100%; display: block; padding-bottom: 5px; font-size: 10pt; color: #999}
+
+.content-b{ width: 100%; text-align: center; display: block; margin-bottom: 10px}
+
+
+
+/* 获取当前位置 */
+.getGps{
+  width: 92%; background: #FFF; padding:3% 4%; font-size: 12px; color: #C1C1C1;
+  text-align: right
+}
+image.mapIco{
+  width: 2%;
+  margin-left: 13rpx
+}
+
+/* 转发按钮 */
+.zhuan{ width: 90%; padding:3% 5%;  background: #FAFAFA;}
+.zhuan button{ border-radius: 50px; background: #FF8840; font-size: 15px; color:#fff; border: 0;}
+.zhuan button::after {
+  border: 0; 
+}
+
+/* 报名列表 */
+.bmList{
+  width: 100%; display: block
+}
+.bmList label{
+  width: 90%; font-size: 14px; padding:3% 5%; display: block;
+  border-bottom: 2rpx #F4F4F4 solid; color: #999
+}
+.bmList .userLs{
+  width: 90%; padding: 3% 0; font-size: 14px; margin: 0 5%;
+  display:flex;
+  border-bottom: 2rpx #F4F4F4 solid
+}
+.bmList .userName{
+  flex: 1; color: #333
+}
+.bmList .userTel{
+  flex: 1; text-align: right; color: #666
+}
+
+.kdate{
+  width: 100%; border-bottom: 2rpx #F4F4F4 solid; padding: 3% 0;
+  font-size: 14px
+}
+.kdate label{
+   color: #666
+}
+.kdate text{
+  
+}

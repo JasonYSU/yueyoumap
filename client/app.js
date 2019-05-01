@@ -1,5 +1,6 @@
 //app.js
 const prodHost = 'https://wx.yueyoumap.com';
+const prodHost1 = 'https://485889659.yueyoumap.com';
 const devHost = 'http://127.0.0.1:8000';
 App({
   onLaunch: function () {
@@ -37,5 +38,6 @@ App({
   globalData: {
     userInfo: null,
     host: prodHost,
+    //host: prodHost1,
   }
 })

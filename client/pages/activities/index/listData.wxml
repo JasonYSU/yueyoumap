@@ -1,0 +1,25 @@
+<block url="" wx:for="{{infoList}}" wx:key="">
+    <view class="item">
+      <navigator url="../view/view?id={{item.id}}" class="navigator-item">
+        <view class="UserName">
+          <view class="UserPic">
+            <image src="{{item.headimgurl}}"></image>
+            <text>{{item.wxname}}</text>
+          </view>
+          <view class="UserDate-a"></view>
+        </view>
+        <text class="textCms">{{item.title}}</text>
+        <view class="viPhoto" wx:if="{{item.photo != null}}">
+            <view class="wiPhoto">
+              <block>
+              <image class="poster" src="{{picUrl}}{{item.photo}}" mode="aspectFill"></image>
+              </block>
+            </view>
+          </view>
+      <view class="datetime">
+          <label class="pl"><image src="../../../resources/pl.png" class="plimg"></image>{{item.plnum}}</label>
+          <label class="tm"><image src="../../../resources/time.png" class="tmimg"></image>{{item.datetime}}</label>
+      </view>  
+      </navigator>
+    </view>
+  </block>

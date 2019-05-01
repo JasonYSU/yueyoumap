@@ -1,0 +1,84 @@
+/* pages/add/add.wxss */
+page {
+  background-color: #F5F5F5;
+  height: 100%;
+  line-height: 1.6;
+}
+.mbInput{
+  background: #fff;
+  width: 90%;
+  padding: 0 5%;
+}
+.checkimg{
+  width: 90%; background: #fff;
+  height: 140rpx; overflow: hidden; padding: 3% 5% 
+}
+
+.section{
+  padding: 25rpx 0 10rpx 0; width: 100%;
+}
+
+.mbBtn{ width: 90%; margin: 40rpx auto 0}
+
+.mbBtn button::after {
+  border:0;
+}
+
+.mbBtn .vBtn_ok{
+   border: 0; background: #FF8840; color: #FFF;
+   margin-top: 30rpx; margin-bottom: 20rpx; border-radius: 100rpx
+}
+
+.mbTxing{
+   width: 90%; background: #FFF5EC; padding:2% 5%;
+   border-bottom: 2rpx #FFE2C8 solid; color: #FF8E28; font-size: 10pt
+}
+.mbTxing text{ width: 100%; display: block }
+.xuanBtn{
+  display: flex;
+  flex-direction: row;
+  padding: 0 40rpx
+} 
+
+.uploadPic{ width: 20%; margin-right: 20rpx}
+.uploadPics{ width: 20%; height: 135rpx; margin-right: 20rpx;}
+.miaoshu{ padding-bottom: 20rpx}
+
+/* 获取当前位置 */
+.getGps{
+  width: 92%; background: #FCFCFC; border-top: 2rpx #F5F5F5 solid; border-bottom: 2rpx #ECECEC solid; padding:3% 4%; font-size: 14px; color: #999;
+}
+.getGps label{
+  margin-right: 20rpx;
+}
+image.mapIco{
+  width: 3%;
+  margin-right: 15rpx
+}
+
+/* 表白对象 */
+.title{
+  width: 90%; background: #fff;
+  border-bottom: 2rpx #ECECEC solid;
+  padding: 24rpx 5%;
+}
+.title label{
+  float: left; color: #666
+}
+.title input{
+  padding-left: 20rpx
+}
+
+/* 开始结束时间 */
+.ktime{
+  width: 90%; display: block; border-bottom: 2rpx #F5F5F5 solid; background: #fff; padding: 24rpx 5%
+}
+.ktime label{
+  float: left; padding-right: 20rpx; color: #666
+}
+.ktime .picker{
+  display:  flex
+}
+.ktime picker{
+  flex: 1; color: #333
+}
